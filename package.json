@@ -1,0 +1,39 @@
+{
+  "name": "passgrade",
+  "version": "1.1.1",
+  "description": "A lightweight password strength checker for JavaScript and Node.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sathurshanan-dev/passgrade"
+  },
+  "homepage": "https://github.com/sathurshanan-dev/passgrade",
+  "type": "module",
+  "main": "./src/index.cjs",
+  "module": "./src/index.js",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "require": "./src/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "pack:check": "npm pack --dry-run"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "password",
+    "password-strength",
+    "password-validation",
+    "security",
+    "javascript"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
